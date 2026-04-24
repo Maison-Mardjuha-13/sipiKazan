@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagination</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h2 class="title">Jewelry</h2>
+    <div class="filters">
+        <img src="filterIcon.png" alt="" height="40" width="40">
+
+        <form id="price" class="formFilter">
+            <div class="btnFilter" id="priceBtn">
+                <div>по цене</div>
+                <img src="downIcon.png" alt="" height="20" width="20">
+            </div>
+            <div id="priceSet" class="priceSet">
+                <input type="number" id="price_to">
+                <button id="price_btn">Применить</button>
+            </div>
+        </form>
+        <form id="brands" class="formFilter">
+            <div class="btnFilter" id="brandsBtn">
+                <div>по бренду</div>
+                <img src="downIcon.png" alt="" height="20" width="20">
+            </div>
+            <div id="brandsSet" class="brandsSet">
+                <div id="brandsList"></div>
+            </div>
+        </form>
+        <form id="product" class="formFilter">
+            <div class="btnFilter" id="productBtn">
+                <div>по названию</div>
+                <img src="downIcon.png" alt="" height="20" width="20">
+            </div>
+            <div id="productSet" class="productSet">
+                <input type="text" id="product-name">
+                <button type="submit" id="product_btn">Применить</button>
+            </div>
+        </form>
+
+        <div id="deleteFilter" class="formFilter btnFilter">
+            убрать фильтр
+        </div>
+
+    </div>
+    <div class="posts" id="card-container">
+    </div>
+    <div class="pagination" id="pagination"></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
